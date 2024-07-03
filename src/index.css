@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 70%;
+  height: 8px;
+  border-radius: 5px;
+  background: #3e3d41; /* Dark background color */
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #14d3d3; /* White thumb color */
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #1d7ca5; /* White border */
+}
+
+input[type="checkbox"]:checked + label {
+
+  font-weight: bold;
+  color: rgb(224, 220, 220);
+}
+
+::selection {
+  background-color: #6d7073; /* Replace with your desired background color */
+  color: #0d5367ca; /* Replace with your desired text color */
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="checkbox"]:checked {
+  background-color: green;
+  border-color: green;
+}
